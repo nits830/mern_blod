@@ -6,10 +6,14 @@ import Home from './pages/Home'
 import SignUp from './pages/SignUp'
 import About from './pages/About'
 import Projects from './pages/Projects'
+import Header from './components/Header'
+import { Button } from "flowbite-react";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Header/>
+      <Button>Click me</Button>
       <Routes>
         <Route path='/' element ={<Home/>}/>
         <Route path='/dashboard' element ={<Dashboard/>}/>
